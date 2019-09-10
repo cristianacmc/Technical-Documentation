@@ -1,7 +1,8 @@
 # Build a Technical Documentation Page
 
 This is a page document about Java Script. For this project was advised use HTML and plain CSS.  can use HTML, JavaScript, and CSS to complete this project.
-In order to complete this, we have to fullfill the user stories below:
+In order to complete this, we have to fullfill the [user stories](https://en.wikipedia.org/wiki/User_story) below:
+
 
 **1** - I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
 
