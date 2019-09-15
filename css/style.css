@@ -1,0 +1,47 @@
+code {
+	font-family: monospace;
+	background-color:  #D0D0D0;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+	font-family: 'Lato', sans-serif;;
+}
+
+#navbar {
+	height: 100%;
+	width: 300px;
+	border-right: 2px solid gray;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+}
+
+#main-doc {
+	width: 1000px;
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}
+
+#navbar h2 {
+	text-align: center;
+}
+
+#navbar ul{
+	list-style-type: none;
+}
+
+#navbar li{
+	padding: 10px 0 10px 0;
+	border-top: 2px solid gray;
+}
+
+#navbar a {
+	text-decoration: none;
+}
+
+
+
