@@ -8,26 +8,32 @@ code {
 }
 
 body {
-	display: flex;
-	flex-direction: row;
 	font-family: 'Lato', sans-serif;
 	line-height: 1.5;
 }
 
+.container {
+	height: auto;
+	display: grid;
+	grid-template-columns: 30% 70%;
+	grid-template-areas:"navbar main-doc";
+}
+
 #navbar {
+	width: 320px;
 	height: 100%;
-	width: 300px;
 	border-right: 2px solid gray;
 	position: fixed;
 	top: 0px;
 	left: 0px;
+	grid-area: navbar;
+	border-color: rgba(0,22,22,0.4);
 }
 
 #main-doc {
-	width: 1050px;
 	position: absolute;
-	right: 30px;
-	top: 20px;
+	margin: 20px 0 100px 370px ;
+	grid-area: main-doc;
 }
 
 #main-doc p {
@@ -65,6 +71,10 @@ header h2 {
 
 section li {
 	margin: 20px 0 0 15px;
+}
+
+@media (max-width: 815px) {
+
 }
 
 
