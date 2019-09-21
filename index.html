@@ -131,13 +131,13 @@ section li {
 		</header>
 		<ul>
 			<li><a class="nav-link" href="#Introduction">Introduction</a></li>
-			<li><a class="nav-link" href="#requirements">What you should already know</a></li>
+			<li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
 			<li><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a></li>
-			<li><a class="nav-link" href="#Hello_World">Hello world</a></li>
+			<li><a class="nav-link" href="#Hello_World">Hello World</a></li>
 			<li><a class="nav-link" href="#Variables">Variables</a></li>
-			<li><a class="nav-link" href="#Declaring_Variables">Declaring variables</a></li>
-			<li><a class="nav-link" href="#Variable_Scope">Variable scope</a></li>
-			<li><a class="nav-link" href="#Global_Variables">Global variables</a></li>
+			<li><a class="nav-link" href="#Declaring_Variables">Declaring Variables</a></li>
+			<li><a class="nav-link" href="#Variable_Scope">Variable Scope</a></li>
+			<li><a class="nav-link" href="#Global_Variables">Global Variables</a></li>
 			<li><a class="nav-link" href="#Constants">Constants</a></li>
 			<li><a class="nav-link" href="#Data_types">Data types</a></li>
 			<li><a class="nav-link" href="#if...else_statement">if...else statement</a></li>
@@ -147,8 +147,8 @@ section li {
 		</ul>
 	</nav>
 	<main id="main-doc">
-		<section class="main-section">
-			<header id="Introduction">
+		<section class="main-section" id="Introduction">
+			<header>
 				<h2>Introduction</h2>
 			</header>
 				<p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
@@ -159,8 +159,8 @@ section li {
 				</ul>
 		</section>
 
-		<section class="main-section">
-			<header id="What you should already know">
+		<section class="main-section" id="What_you_should_already_know">
+			<header>
 				<h2>What you should already know</h2>
 			</header>
 				<p>This guide assumes you have the following basic background:</p>
@@ -171,8 +171,8 @@ section li {
 				</ul>
 		</section>
 
-		<section class="main-section">
-			<header id="JavaScript_and_Java">
+		<section class="main-section" id="JavaScript_and_Java">
+			<header>
 				<h2>JavaScript and Java</h2>
 			</header>
 				<p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
@@ -182,8 +182,8 @@ section li {
 				<p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
 		</section>
 
-		<section class="main-section">
-			<header id="Hello_World">
+		<section class="main-section" id="Hello_World">
+			<header>
 				<h2>Hello World</h2>
 			</header>
 				<p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
@@ -193,8 +193,8 @@ section li {
 				<p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
 		</section>
 
-		<section class="main-section">
-			<header id="Variables">
+		<section class="main-section" id="Variables">
+			<header>
 				<h2>Variables</h2>
 			</header>
 				<p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
@@ -204,8 +204,8 @@ section li {
 				<p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
 		</section>
 
-		<section class="main-section">
-			<header id="Declaring_Variables">
+		<section class="main-section" id="Declaring_Variables">
+			<header>
 				<h2>Declaring Variables</h2>
 			</header>
 			<p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
@@ -219,16 +219,16 @@ section li {
 			<code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined</code>
 		</section>
 
-		<section class="main-section">
-			<header id="Variable_Scope">
+		<section class="main-section" id="Variable_Scope">
+			<header>
 				<h2>Variable Scope</h2>
 			</header>
 				<p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
 				<p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
 		</section>
 
-		<section class="main-section">
-			<header id="Global_Variables">
+		<section class="main-section" id="Global_Variables">
+			<header>
 				<h2>Global Variables</h2>
 			</header>
 				<p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
@@ -250,8 +250,8 @@ section li {
 				<code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code>
 		</section>
 
-		<section class="main-section">
-			<header id="Constants">
+		<section class="main-section" id="Constants">
+			<header>
 				<h2>Constants</h2>
 			</header>
 				<p>The latest ECMAScript standard defines seven data types:</p>
@@ -268,8 +268,8 @@ section li {
 				<p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
 		</section>
 
-		<section class="main-section">
-			<header id="Data_types">
+		<section class="main-section" id="Data_types">
+			<header>
 				<h2>Data types</h2>
 			</header>
 				<p>The latest ECMAScript standard defines seven data types:</p>
@@ -286,8 +286,8 @@ section li {
 				<p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
 		</section>
 
-		<section class="main-section">
-			<header id="if...else_statement">
+		<section class="main-section" id="if...else_statement">
+			<header>
 				<h2>if...else statement</h2>
 			</header>
 				<p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:
@@ -316,8 +316,8 @@ section li {
 				<code>if ((x = y)) { /* statements here */ }</p></code>
 		</section>
 
-		<section class="main-section">
-			<header id="while_statement">
+		<section class="main-section" id="while_statement">
+			<header>
 				<h2>while statement</h2>
 			</header>
 				<p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
@@ -338,8 +338,8 @@ section li {
 				<p>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
 		</section>
 
-		<section class="main-section">
-			<header id="Function_declarations">
+		<section class="main-section" id="Function_declarations">
+			<header>
 				<h2>Function declarations</h2>
 			</header>
 				<p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
@@ -355,8 +355,8 @@ section li {
 				<p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
 		</section>
 
-		<section class="main-section">
-			<header id="Reference">
+		<section class="main-section" id="Reference">
+			<header>
 				<h2>Reference</h2>
 			</header>
 				<p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></p>
